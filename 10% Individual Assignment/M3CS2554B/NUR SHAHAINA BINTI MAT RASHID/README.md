@@ -32,20 +32,7 @@ The objectives of this project are:
 
 ---
 
-## 4. Methodology
-
-### Sequential Method
-In this method, the program generates passwords one by one. It is simple but may be slower when the number of tasks is large.
-
-### Threading Method
-Threading allows multiple tasks to run at the same time. In this project, threads are used to generate passwords concurrently.
-
-### Multiprocessing Method
-Multiprocessing creates multiple processes that can run in parallel using CPU cores. This method is used to test parallel execution.
-
----
-
-## 5. System Description
+## 4. System Description
 
 The program works as follows:
 
@@ -59,9 +46,7 @@ Each generated password is also checked to determine whether it is Weak, Medium,
 
 ---
 
-## 6. USER MANUAL
-
-### 6.1 System Requirements
+## 5. System Requirements
 
 - Python 3.x  
 - Visual Studio Code (or any Python IDE)  
@@ -69,7 +54,7 @@ Each generated password is also checked to determine whether it is Weak, Medium,
 
 ---
 
-### 6.2 Installation Steps
+## 6. Installation Steps
 
 1. Install Python from https://www.python.org  
 2. Install Visual Studio Code  
@@ -78,30 +63,56 @@ Each generated password is also checked to determine whether it is Weak, Medium,
 
 ---
 
-### 6.3 How to Run the Program
+## 7. How to Run the Program
 
 Open terminal in VS Code and run:
 python main.py
 
 ---
 
-## 7. Sample Output
-<img width="675" height="978" alt="image" src="https://github.com/user-attachments/assets/f5e8747f-65a2-4512-859b-3d005715d079" />
+## 8. Sample Input
+<img width="753" height="113" alt="image" src="https://github.com/user-attachments/assets/48cb7713-9ba2-4fa4-bc6a-2384fc870550" />
+
+
+## 9. Sample Output
+<img width="686" height="1057" alt="image" src="https://github.com/user-attachments/assets/dc0e1d92-9452-4646-bf46-0d4e1f5cc2ca" />
+
+
 
 ---
 
-## 8. Discussion
+## 10. Source Code
 
-This project successfully demonstrates:
+### main.py :
+<img width="723" height="1060" alt="image" src="https://github.com/user-attachments/assets/7b5b83f2-0c65-486a-b2bc-c14bf625afae" />
 
-- Concurrent programming using threading  
-- Parallel programming using multiprocessing  
-- Processing of a large number of tasks  
-- Performance comparison between different approaches  
+### multiprocessing_ver.py :
+<img width="424" height="371" alt="image" src="https://github.com/user-attachments/assets/2ee3ab27-cb4c-4c4e-b376-43ebdeee209f" />
 
-Even though multiprocessing is not always faster in this case, it still shows how parallel programming works.
+### password.py :
+<img width="340" height="445" alt="image" src="https://github.com/user-attachments/assets/2a21897b-47ca-4bb6-bd89-b013ca40cd84" />
+
+### sequential.py :
+<img width="269" height="237" alt="image" src="https://github.com/user-attachments/assets/ae6a0d43-18ce-4821-8ff2-8fd77fcb0541" />
+
+### threading_ver.py :
+<img width="449" height="368" alt="image" src="https://github.com/user-attachments/assets/412e0d8d-7636-44c4-a18c-c124960ea81f" />
+
 
 ---
 
-## 9. Links  
+## 11. Conclusion
+In conclusion, sequential, concurrent, and parallel programming are important concepts in modern computing. Sequential execution processes tasks one by one, which is simple but may be slower when handling many tasks.
+
+Concurrent programming, such as threading, allows multiple tasks to run at the same time within a single program. This improves efficiency, especially when tasks involve waiting or input/output operations.
+
+Parallel programming, such as multiprocessing, allows tasks to run on multiple CPU cores simultaneously. This can significantly improve performance for larger and more complex tasks.
+
+However, the effectiveness of each approach depends on the type of task. For smaller tasks, the overhead of managing threads or processes may reduce performance. Therefore, choosing the right approach is important depending on the problem.
+
+Overall, understanding these three techniques helps in designing more efficient and scalable programs.
+
+---
+
+## 12. Links  
 YouTube Demo: (paste your video link)
