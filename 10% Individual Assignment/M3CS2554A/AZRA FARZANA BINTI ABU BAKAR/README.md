@@ -92,9 +92,9 @@ The system generates a bar chart to compare execution time between:
 - Threading  
 - Multiprocessing  
 
-📌 *Graph image is shown below.*
+📌  *Graph image is shown below.*
 
----
+![Performance Graph](Figure_1.png)
 
 ## 🧠 Conclusion
 
