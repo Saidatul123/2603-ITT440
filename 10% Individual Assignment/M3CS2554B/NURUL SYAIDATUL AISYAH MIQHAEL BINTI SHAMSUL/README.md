@@ -146,7 +146,13 @@ The system is implemented in Python and includes:
 - Data aggregation and ranking  
 - Performance visualization using matplotlib  
 
-![Source Code](images/source_code.png)
+<img width="1737" height="1005" alt="sc1" src="https://github.com/user-attachments/assets/0d50d551-7e5c-4097-81d8-9c6383f5654e" />
+<img width="1737" height="1009" alt="sc2" src="https://github.com/user-attachments/assets/cd015244-4d6c-42cf-b897-58e4fd8e78de" />
+<img width="1738" height="1004" alt="sc3" src="https://github.com/user-attachments/assets/b000b1f1-f0eb-4114-bd04-378c785a6acf" />
+<img width="1736" height="1006" alt="sc4" src="https://github.com/user-attachments/assets/568ddfe5-eede-480e-a3e0-62d2e34c2154" />
+<img width="1739" height="1003" alt="sc5" src="https://github.com/user-attachments/assets/04af9dbb-75f6-44aa-9f34-d8d2c020d619" />
+<img width="1736" height="1009" alt="sc6" src="https://github.com/user-attachments/assets/0953a609-31d7-4837-a280-0f72b906b392" />
+<img width="1740" height="1004" alt="sc7" src="https://github.com/user-attachments/assets/e99324aa-267a-4ae9-9004-8d6d846b5b00" />
 
 ---
 
