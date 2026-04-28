@@ -1,4 +1,4 @@
-# Password Generator and Analysis System
+# 🔐📊Password Generator and Analysis System
 #### Student Name: NUR SHAHAINA BINTI MAT RASHID
 #### Student ID: 2024421182
 #### Group: M3CS2554B
