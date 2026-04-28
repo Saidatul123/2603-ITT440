@@ -1,2 +1,2 @@
 # MUHAMMAD IDRIS BIN MOHD FAWZI
-test 1
+Parallel QR Code Generator and Decoder
