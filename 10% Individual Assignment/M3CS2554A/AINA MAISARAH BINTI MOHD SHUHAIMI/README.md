@@ -4,9 +4,9 @@
 - Course code : ITT440
 
 ## 📌 Abstract
-This project presents the development of a Python-based simulation program designed to compare the performance of sequential, concurrent, and parallel programming techniques. The application simulates a large volume of solitaire game outcomes using probabilistic models.  
+This project presents the development of a Python-based simulation program designed to compare the performance of sequential, concurrent and parallel programming techniques. The application simulates a large volume of solitaire game outcomes using probabilistic models.  
 
-The program implements threading as a concurrent technique and multiprocessing as a parallel technique. Performance is evaluated based on execution time when processing millions of simulated games. The results demonstrate that multiprocessing achieves the best performance for CPU-bound tasks, while threading is limited due to Python’s Global Interpreter Lock (GIL).  
+The program implements threading as a concurrent technique and multiprocessing as a parallel technique. Performance is evaluated based on execution time when processing thousands of simulated games. The results demonstrate that multiprocessing achieves the best performance for CPU-bound tasks, while threading is limited due to Python’s Global Interpreter Lock (GIL).  
 
 ## 🌟 Introduction
 With the advancement of multi-core processors, parallel programming has become essential for improving computational efficiency. Different programming techniques such as sequential execution, threading, and multiprocessing offer various levels of performance depending on the nature of the task.
