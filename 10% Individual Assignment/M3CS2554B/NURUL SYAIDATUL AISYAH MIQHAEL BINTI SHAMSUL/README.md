@@ -1,5 +1,8 @@
 # 🎬 Movie Recommendation Analyzer: A High-Performance Implementation Using Python
 
+NAME: NURUL SYAIDATUL AISYAH MIQHAEL BINTI SHAMSUL  
+STUDENT ID: 2024283972
+
 ---
 
 ## 📌 Introduction
@@ -160,7 +163,7 @@ The system is implemented in Python and includes:
 
 The results show that parallel programming is the most efficient approach for processing large datasets.
 
-Sequential execution required over 136 seconds, while the parallel method reduced execution time to approximately 28 seconds by using all available CPU cores.
+Sequential execution required over 75.73 seconds, while the parallel method reduced execution time to approximately 23.15 seconds by using all available CPU cores.
 
 Although threading improves system responsiveness, it does not significantly improve performance for heavy calculations due to Python’s GIL. Therefore, multiprocessing is the most suitable method to achieve better performance when handling large amounts of data.
 
