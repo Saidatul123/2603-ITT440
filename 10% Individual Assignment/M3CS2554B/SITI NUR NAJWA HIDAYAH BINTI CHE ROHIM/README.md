@@ -30,14 +30,11 @@ This project simulates a food ordering system that processes a large number of c
 
 ## 📌 Introduction
 
-This project simulates a food ordering system that processes 20,000 customer orders.  
+In today’s fast-paced digital environment, food delivery platforms must handle thousands of customer requests simultaneously.  
+During peak hours, even a slight delay in processing can impact user experience.
 
-The main objective is to analyze system performance using three different processing techniques:
-- Sequential  
-- Concurrent (Threading)  
-- Parallel (Multiprocessing)  
+This project simulates a high-demand food ordering system by processing **20,000 orders**, and evaluates how different execution techniques affect system performance.
 
-The system uses an 8-core CPU, allowing parallel processing to execute tasks simultaneously and improve performance.
 
 ----
 
@@ -63,7 +60,7 @@ This project explores how concurrent and parallel processing can improve system 
 | Parameter | Details |
 |----------|--------|
 | 💻 OS | Kali Linux / Windows |
-| 🐍 Python | Python 3.x |
+| 🐍 Python | Python 3.8 |
 | ⚙️ CPU | 8-Core Processor |
 | 🚀 Modes | Sequential, Threading, Multiprocessing |
 
@@ -112,9 +109,28 @@ with Pool(processes=cores) as pool:
 ## 📊 Output Result
 <p align="center"> <img src="output.png" width="600"> </p>
 
+The system generates and processes a large number of food orders.
+
+The output displays:
+- Total number of orders processed  
+- Number of successful and failed orders  
+- Total payment calculated from all orders  
+
+This shows that the system is able to handle large-scale data efficiently.
+
 ---
 ## 📈 Performance Graph
 <p align="center"> <img src="graph.png" width="600"> </p>
+
+The graph compares the execution time of three processing techniques:
+
+- Sequential Processing → highest execution time (slowest)  
+- Concurrent Processing → moderate execution time  
+- Parallel Processing → lowest execution time (fastest)  
+
+The lower the bar represents faster performance.
+
+This graph clearly demonstrates that parallel processing provides better efficiency by utilizing multiple CPU cores.
 
 ---
 ## 🔍 Analysis
