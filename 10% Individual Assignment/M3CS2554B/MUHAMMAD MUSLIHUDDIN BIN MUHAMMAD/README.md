@@ -42,3 +42,5 @@ Sequential processing was the simplest to implement but showed the slowest perfo
 Parallel processing achieved the best performance among the three methods by distributing tasks across multiple CPU cores, enabling true simultaneous execution. This significantly reduced execution time, especially for CPU-intensive operations such as large-scale plate number generation.
 
 Overall, the project highlights the importance of selecting an appropriate processing method based on the nature of the task. While sequential processing is suitable for simple and low-volume operations, concurrent and parallel processing provide substantial performance improvements for more complex and large-scale applications.
+# MUHAMMAD MUSLIHUDDIN BIN MUHAMMAD
+PLATE NUMBER GENERATOR
