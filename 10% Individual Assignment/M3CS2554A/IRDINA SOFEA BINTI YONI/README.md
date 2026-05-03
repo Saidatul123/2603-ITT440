@@ -8,7 +8,7 @@
 
 **Youtube Link**: https://youtu.be/XZgFlqfZd44
 
-**Source Code**: 
+**Source Code**: https://github.com/2024644534/2603-ITT440/blob/main/10%25%20Individual%20Assignment/M3CS2554A/IRDINA%20SOFEA%20BINTI%20YONI/parallel_genetic_optimizer.py
 
 
 # 🛡️ **1. Mission Objective**
