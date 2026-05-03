@@ -199,10 +199,32 @@ from multiprocessing import Pool, freeze_support
 import tkinter as tk
 from tkinter import ttk
 
+# =========================================
 # DATA
-airlines = ["AirAsia", "Malaysia Airlines", "Batik Air", "Singapore Airlines", "Qatar Airways"]
+# =========================================
 
-destinations = ["Kuala Lumpur", "Bangkok", "Jakarta", "Seoul", "Tokyo", "Dubai", "Sydney", "London"]
+airlines = [
+    "AirAsia",
+    "Malaysia Airlines",
+    "Batik Air",
+    "Singapore Airlines",
+    "Qatar Airways"
+]
+
+destinations = [
+    "Kuala Lumpur",
+    "Bangkok",
+    "Jakarta",
+    "Seoul",
+    "Tokyo",
+    "Dubai",
+    "Sydney",
+    "London"
+]
+
+# =========================================
+# AIRLINE RATING SYSTEM
+# =========================================
 
 airline_rating = {
     "AirAsia": 3.8,
@@ -212,7 +234,12 @@ airline_rating = {
     "Qatar Airways": 4.7
 }
 
+# =========================================
+# REALISTIC PRICE SYSTEM
+# =========================================
+
 def generate_price(destination, airline):
+
     base_prices = {
         "Kuala Lumpur": 150,
         "Bangkok": 200,
@@ -225,21 +252,30 @@ def generate_price(destination, airline):
     }
 
     base = base_prices.get(destination, 500)
+
     rating = airline_rating[airline]
 
+    # Higher rating = slightly higher price
     rating_multiplier = 0.8 + (rating / 5)
+
     variation = random.randint(-100, 500)
+
     surge = random.uniform(0.9, 1.6)
 
     price = int((base + variation) * surge * rating_multiplier)
 
     return max(100, price)
 
+# =========================================
+# GENERATE MASSIVE DATA
+# =========================================
 
 def generate_flight_data(num_records):
+
     data = []
 
     for i in range(num_records):
+
         airline = random.choice(airlines)
         destination = random.choice(destinations)
 
@@ -251,34 +287,73 @@ def generate_flight_data(num_records):
             "price": generate_price(destination, airline)
         })
 
+        # show progress every 1 million
+        if (i + 1) % 1000000 == 0:
+            print(f"{i + 1:,} records generated...")
+
     return data
 
+# =========================================
+# SEQUENTIAL (SLOWER)
+# =========================================
 
 def get_sorted_flights(data, destination):
+
     flights = []
 
     for f in data:
+
+        # extra heavy computation
+        dummy = 0
+
+        for i in range(50):
+            dummy += i * i
+
         if f["destination"] == destination:
             flights.append(f)
 
     flights.sort(key=lambda x: x["price"])
+
     return flights
 
+# =========================================
+# THREADING (CONCURRENT)
+# =========================================
 
-def threaded_filter(data, destination, num_threads=8):
+def thread_worker(chunk, destination, results, index):
+
+    filtered = [
+        f for f in chunk
+        if f["destination"] == destination
+    ]
+
+    results[index] = filtered
+
+
+def threaded_filter(data, destination, num_threads=16):
+
     chunk_size = len(data) // num_threads
+
     threads = []
     results = [None] * num_threads
 
-    def worker(chunk, i):
-        results[i] = [f for f in chunk if f["destination"] == destination]
-
     for i in range(num_threads):
+
         start = i * chunk_size
-        end = len(data) if i == num_threads - 1 else start + chunk_size
+
+        end = (
+            len(data)
+            if i == num_threads - 1
+            else start + chunk_size
+        )
+
         chunk = data[start:end]
 
-        t = threading.Thread(target=worker, args=(chunk, i))
+        t = threading.Thread(
+            target=thread_worker,
+            args=(chunk, destination, results, i)
+        )
+
         threads.append(t)
         t.start()
 
@@ -286,83 +361,231 @@ def threaded_filter(data, destination, num_threads=8):
         t.join()
 
     merged = []
+
     for r in results:
         merged.extend(r)
 
     merged.sort(key=lambda x: x["price"])
+
     return merged
 
+# =========================================
+# MULTIPROCESSING (PARALLEL)
+# =========================================
 
-def multiprocessing_filter(data, destination, num_processes=8):
+def process_worker(args):
+
+    chunk, destination = args
+
+    return list(
+        filter(
+            lambda f: f["destination"] == destination,
+            chunk
+        )
+    )
+
+
+def multiprocessing_filter(data, destination, num_processes=16):
+
     chunk_size = len(data) // num_processes
+
     chunks = []
 
     for i in range(num_processes):
+
         start = i * chunk_size
-        end = len(data) if i == num_processes - 1 else start + chunk_size
+
+        end = (
+            len(data)
+            if i == num_processes - 1
+            else start + chunk_size
+        )
+
         chunks.append((data[start:end], destination))
 
-    def worker(args):
-        chunk, destination = args
-        return [f for f in chunk if f["destination"] == destination]
-
     with Pool(processes=num_processes) as pool:
-        results = pool.map(worker, chunks)
+
+        results = pool.map(process_worker, chunks)
 
     merged = []
+
     for r in results:
         merged.extend(r)
 
     merged.sort(key=lambda x: x["price"])
+
     return merged
 
+# =========================================
+# BUTTON FUNCTION
+# =========================================
 
 def run_program():
-    destination = combo.get()
 
-    start = time.time()
-    seq = get_sorted_flights(data, destination)
-    seq_time = time.time() - start
-
-    start = time.time()
-    thread = threaded_filter(data, destination)
-    thread_time = time.time() - start
-
-    start = time.time()
-    process = multiprocessing_filter(data, destination)
-    process_time = time.time() - start
+    destination = combo_destination.get()
 
     output.delete("1.0", tk.END)
 
-    output.insert(tk.END, f"Flights to {destination}\n\n")
+    output.insert(
+        tk.END,
+        "Processing massive flight records...\n\n"
+    )
 
-    for f in seq[:50]:
+    window.update()
+
+    # =====================================
+    # SEQUENTIAL
+    # =====================================
+
+    start = time.time()
+
+    seq = get_sorted_flights(data, destination)
+
+    seq_time = time.time() - start
+
+    # =====================================
+    # THREADING
+    # =====================================
+
+    start = time.time()
+
+    thread = threaded_filter(data, destination)
+
+    thread_time = time.time() - start
+
+    # =====================================
+    # MULTIPROCESSING
+    # =====================================
+
+    start = time.time()
+
+    process = multiprocessing_filter(data, destination)
+
+    process_time = time.time() - start
+
+    # =====================================
+    # DISPLAY OUTPUT
+    # =====================================
+
+    output.delete("1.0", tk.END)
+
+    output.insert(
+        tk.END,
+        f"===== FLIGHTS TO {destination} =====\n\n"
+    )
+
+    # show only top 100
+    for f in seq[:100]:
+
         output.insert(
             tk.END,
-            f"{f['flight_id']} | {f['airline']} | RM {f['price']}\n"
+            f"{f['flight_id']} | "
+            f"{f['airline']} "
+            f"(⭐{f['rating']}) | "
+            f"RM {f['price']}\n"
         )
 
-    output.insert(tk.END, "\nPerformance:\n")
-    output.insert(tk.END, f"Sequential: {seq_time:.2f}s\n")
-    output.insert(tk.END, f"Threading: {thread_time:.2f}s\n")
-    output.insert(tk.END, f"Multiprocessing: {process_time:.2f}s\n")
+    output.insert(tk.END, "\n===== PERFORMANCE =====\n\n")
 
+    output.insert(
+        tk.END,
+        f"Sequential Time: {seq_time:.4f} seconds\n"
+    )
+
+    output.insert(
+        tk.END,
+        f"Threading Time: {thread_time:.4f} seconds\n"
+    )
+
+    output.insert(
+        tk.END,
+        f"Multiprocessing Time: {process_time:.4f} seconds\n"
+    )
+
+    # =====================================
+    # FASTEST METHOD
+    # =====================================
+
+    fastest = min(seq_time, thread_time, process_time)
+
+    if fastest == seq_time:
+        method = "Sequential"
+    elif fastest == thread_time:
+        method = "Threading"
+    else:
+        method = "Multiprocessing"
+
+    output.insert(
+        tk.END,
+        f"\nFASTEST METHOD: {method}\n"
+    )
+
+# =========================================
+# MAIN
+# =========================================
 
 if __name__ == "__main__":
+
     freeze_support()
 
-    data = generate_flight_data(1000000)
+    print("Generating 10,000,000 flight records...")
+
+    start_generation = time.time()
+
+    # massive dataset
+    data = generate_flight_data(10000000)
+
+    end_generation = time.time()
+
+    print("Generation Complete!")
+    print(
+        f"Generation Time: "
+        f"{end_generation - start_generation:.2f} seconds"
+    )
+
+    # =====================================
+    # GUI
+    # =====================================
 
     window = tk.Tk()
-    window.title("Flight Comparator")
 
-    combo = ttk.Combobox(window, values=destinations)
-    combo.pack()
+    window.title(
+        "High-Performance Parallel Flight Comparator"
+    )
 
-    tk.Button(window, text="Run", command=run_program).pack()
+    window.geometry("950x700")
 
-    output = tk.Text(window, height=30, width=100)
-    output.pack()
+    tk.Label(
+        window,
+        text="Flight Ticket Comparator System",
+        font=("Arial", 18, "bold")
+    ).pack(pady=10)
+
+    combo_destination = ttk.Combobox(
+        window,
+        values=destinations,
+        width=35
+    )
+
+    combo_destination.pack(pady=5)
+
+    combo_destination.current(0)
+
+    tk.Button(
+        window,
+        text="Run Performance Comparison",
+        command=run_program,
+        bg="lightblue",
+        font=("Arial", 12, "bold")
+    ).pack(pady=10)
+
+    output = tk.Text(
+        window,
+        height=35,
+        width=115
+    )
+
+    output.pack(pady=10)
 
     window.mainloop()
 ```
