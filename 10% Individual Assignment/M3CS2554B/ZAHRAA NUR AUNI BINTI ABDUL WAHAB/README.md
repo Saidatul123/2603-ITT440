@@ -1,4 +1,9 @@
-# Log Analytics & Performance Benchmarking System
+# High-Performance Word Frequency Counter at Scale
+
+**Name:** ZAHRAA NUR AUNI BINTI ABDUL WAHAB  
+**Student ID:** 2024290642 
+**Class:** M3CS2554B  
+**Course Code:** ITT440 (Parallel Programming)
 
 ## 1. Project Overview
 This project demonstrates a high-performance **Word Frequency Analyzer** designed to process large-scale data (10 Million records). The core objective is to compare the efficiency of three different processing models in Python: **Sequential**, **Concurrent (Threading)**, and **Parallel (Multiprocessing)**.
