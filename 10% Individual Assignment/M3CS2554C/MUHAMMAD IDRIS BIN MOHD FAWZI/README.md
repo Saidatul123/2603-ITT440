@@ -26,21 +26,21 @@
 
 ### 🔁 How It Works
 
-INPUT: Number of QR codes (e.g., 10,000)
-│
-▼
+INPUT: Number of QR codes (example, 10,000)
+            │
+            ▼
 [GENERATE] Unique payloads (text strings)
-│
-▼
+            │
+            ▼
 [MULTIPROCESSING] Create QR codes using all CPU cores
-│
-▼
-OUTPUT: qr_output/ (thousands of .png images)
-│
-▼
+            │
+            ▼
+OUTPUT: qr_output/ (.png images created here)
+            │
+            ▼
 [THREADING] Decode images using multiple threads
-│
-▼
+            │
+            ▼
 OUTPUT:
 • Decoded text data (displayed on screen)
 • Performance summary (time & speedup)
