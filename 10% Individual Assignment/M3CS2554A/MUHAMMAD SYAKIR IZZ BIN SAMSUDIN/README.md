@@ -19,7 +19,7 @@
 | **Class** |M3CS2554A|
 | **Course** | ITT440 - Network Programming |
 | **Lecturer** | SIR SHAHADAN BIN SAAD |
-| **Youtube Link** |  |
+| **Youtube Link** | https://youtu.be/S3YQ3JPsH7Y?si=xC6J12uRIO1ohCJJ |
 
 
 ---
@@ -51,7 +51,6 @@ This project develops a high-performance **Parallel Mean Calculator** with a bea
 - 📈 Computing statistical mean of **10+ million numbers**
 - 🔄 Comparing **3 execution methods** in real-time
 - 🎨 Displaying results in an **interactive GUI**
-- 📊 Visualizing performance with **bar charts**
 - 📁 Supporting **multiple data sources** (generate, manual, file)
 
 
