@@ -5,7 +5,8 @@
 **Student ID:** 2025215266  
 **Group:** M3CS2554C  
 **Lecturer:** Sir Shahadan Bin Saad
-
+Github Link:** https://github.com/idrisfawzi/Parallel-QR-Code-Generator-and-Decoder
+YouTube Link:** https://youtu.be/MG8vEaH8ObM**
 ---
 
 ## 📖 Project Overview
@@ -247,6 +248,6 @@ Optimised   █████████████ (29%)
 ## 🎥 Demo Video
 
 Watch the full walkthrough and performance demo on YouTube:  
-📺 **[https://youtu.be/YOUR_VIDEO_LINK_HERE](https://youtu.be/YOUR_VIDEO_LINK_HERE)**
+📺 **[https://youtu.be/YOUR_VIDEO_LINK_HERE](https://youtu.be/MG8vEaH8ObM)**
 
 ---
