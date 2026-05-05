@@ -12,6 +12,8 @@ Low Blood Pressure) based on simulated systolic and diastolic readings.
 The primary goal is to demonstrate how Sequential, Concurrent, and Parallel utilize hardware resources differently, especially on multi-core consumer hardware.
 
 # System
+## Demonstration System
+
 Operating System: Windows 11
 
 Python Version: 3.14
@@ -19,6 +21,31 @@ Python Version: 3.14
 CPU Cores: 6 cores
 
 RAM: 8GB DDR5
+
+## User Manual
+
+### 1. System Requirements
+Operating System: Windows 10/11
+
+Language: Python 3.8 or higher
+
+Hardware: Minimum 4GB RAM (8GB+ recommended for 10 million records)
+
+Libraries: Standard Python libraries (`random`, `time`, `threading`, `multiprocessing`)
+
+### 2. Installation Steps
+1.  **Install Python**: Download and install the latest version of Python from [python.org](https://www.python.org/).
+2.  **Download the Project**:
+    *   Clone this repository or download the `BP_analyzer.py` file directly to your computer.
+3.  **Setup Environment**: No external libraries are required as the project uses built-in Python modules.
+
+### 3. How to Run the Program
+1.  Open your **Command Prompt (CMD)** or **Terminal**.
+2.  Navigate to the folder where you saved the file.
+3.  Run the program using the following command:
+    ```bash
+    python BP_analyzer.py
+    ```
 
 # Objectives
 1. To develop a functional Blood Pressure Analyzer capable of processing 10 million records.
@@ -90,4 +117,6 @@ The analyzer successfully processed the entire dataset with the following distri
 The findings confirm that for CPU-bound tasks like medical data analysis, Multiprocessing (Parallel) is significantly more efficient than Sequential or Threaded execution.
   This project highlights the importance of choosing the right concurrency model when developing high-performance network and data-processing applications in a real-world scenarios.
 
+# YouTube Demonstration
+Link: [Demo Video](https://youtu.be/1OH_vF4c38M)
 
