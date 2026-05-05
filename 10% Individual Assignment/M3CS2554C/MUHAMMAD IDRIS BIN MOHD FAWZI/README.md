@@ -162,8 +162,9 @@ Success: 222/222.
  TOTAL TIME: 0.94s
 ============================================================
 ```
-<img width="491" height="319" alt="ss1" src="https://github.com/user-attachments/assets/c475bb91-c504-45a7-b179-d2cd036a221b" />
-<img width="505" height="139" alt="ss1(summary)" src="https://github.com/user-attachments/assets/32dcbbf6-bac8-4bea-8f4b-5231c19ce2f2" />
+<img width="491" height="319" alt="ss1" src="https://github.com/user-attachments/assets/30345ddc-6a96-43a8-91da-74924b762784" />
+<img width="505" height="139" alt="ss1(summary)" src="https://github.com/user-attachments/assets/c7d52f95-a866-48fe-b950-9f718f4e9828" />
+
 
 ### 🔸 Large‑scale test (10,000 QR codes)
 
@@ -196,8 +197,8 @@ Success: 10222/10222.
  TOTAL TIME: 33.05s
 ============================================================
 ```
-<img width="495" height="180" alt="ss2" src="https://github.com/user-attachments/assets/da7f103a-4077-44e2-b6f5-0e574d3268fd" />
-<img width="491" height="319" alt="ss1" src="https://github.com/user-attachments/assets/52e55950-49f4-4bf0-aa5d-bdac6dd3a797" />
+<img width="495" height="180" alt="ss2" src="https://github.com/user-attachments/assets/4ab2c2e5-00c7-42fa-acc4-fa80992215a4" />
+<img width="522" height="134" alt="ss2(summary)" src="https://github.com/user-attachments/assets/44635578-d14f-42c6-97cf-85e7e8a180d9" />
 
 ## 📊 Performance Comparison
 
