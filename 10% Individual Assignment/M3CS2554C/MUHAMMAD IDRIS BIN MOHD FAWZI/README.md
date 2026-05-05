@@ -189,7 +189,7 @@ Success: 10222/10222.
  PERFORMANCE SUMMARY
 ============================================================
  Total items generated: 10000
- Generation  (parallel (4 workers)): 11.69s                         ![ss2(summary)](https://github.com/user-attachments/assets/6f2346ec-c18b-4b36-8b61-1f97384cbfb7)
+ Generation  (parallel (4 workers)): 11.69s                         https://imgur.com/fhF9Kqc
  Decoding    (sequential): 21.36s
  TOTAL TIME: 33.05s
 ============================================================
