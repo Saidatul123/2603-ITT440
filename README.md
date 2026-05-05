@@ -1,5 +1,3 @@
-# 2603-ITT440
-
 # ⚡ Parallelized Smart Utility Billing System ⚡
 
 <p align="center">
@@ -13,6 +11,8 @@
 **🎓 STUDENT ID : 2025427336**
 
 **👥 GROUP : M3CS2554C**
+
+**GITHUB LINK : [ITT440 - GITHUB](https://github.com/Saidatul123/Smart_Bil_Utility)**
 
 **YOUTUBE LINK : [ITT440 - INDIVIDUAL ASSIGNMENT](https://youtu.be/ibz1cFCJ8Lo)**
 
