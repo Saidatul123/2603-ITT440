@@ -1,5 +1,7 @@
 # NADHRAHTUL AUFA BINTI ARZERIE
 # Task Queue Simulator
+# CLASS : M3CS2554B
+# ITT440
 
 # INTRODUCTION 
 The Task Queue Simulator is a performance benchmarking application developed to analyze the efficiency of various computational models in handling high-volume task queues. In computing, a task queue is a mechanism used to manage asynchronous work units that need to be processed. This project simulates a scenario where 500 tasks (simulating user requests) are pushed into a queue and processed using three distinct methods: Sequential, Threading, and Multiprocessing. The goal is to determine the optimal execution model for handling CPU-intensive workloads without causing system bottlenecks.
