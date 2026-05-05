@@ -76,7 +76,7 @@
 | **System library** | `zbar` (needed for decoding) |
 
 ### 🔧 Installing `zbar`
-- **Windows:** Download `libzbar-64.dll` from [pyzbar releases](https://github.com/NaturalHistoryMuseum/barcode-reader-dlls/releases/tag/0.1) and place it in the project folder (or in `C:\Windows\System32`).  
+- **Windows:** Download `libzbar-64.dll` from [pyzbar releases](https://github.com/NaturalHistoryMuseum/barcode-reader-dlls/releases/tag/0.1) and place it in the project folder (E.g. in `C:\Windows\System32`).  
 - **Linux:** `sudo apt install libzbar0`  
 - **macOS:** `brew install zbar`
 
