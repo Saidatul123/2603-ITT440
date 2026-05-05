@@ -138,9 +138,9 @@ You will be guided through the following steps:
  PARALLEL QR CODE GENERATOR AND DECODER
 ============================================================
 
-How many QR codes to generate? (e.g., 5000): 222
+How many QR codes to generate? (e.g., 5000): 222                      
 Generated 222 payloads.
-Generation mode: (s)equential, (p)arallel? [p]: s
+Generation mode: (s)equential, (p)arallel? [p]: s            <img width="491" height="319" alt="ss1" src="https://github.com/user-attachments/assets/23a30557-82a9-4fe7-8263-b95e38003547" />
 Starting SEQUENTIAL generation...
 Generation done in 0.78 seconds.
 QR images saved in 'qr_output' folder.
