@@ -85,9 +85,9 @@
 ## 📥 Installation & Setup
 
 ```
-# 1. Clone the repository
-git clone https://github.com/yourusername/parallel-qr-generator-decoder.git
-cd parallel-qr-generator-decoder
+# 1. Install Python
+Download from [python.org](https://www.python.org/downloads/) (version 3.8 or higher).  
+Make sure to check ✅ **"Add Python to PATH"** during installation.
 
 # 2. Create & activate a virtual environment (recommended)
 python -m venv venv
