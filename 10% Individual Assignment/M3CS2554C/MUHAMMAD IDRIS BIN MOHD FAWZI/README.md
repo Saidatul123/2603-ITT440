@@ -97,3 +97,23 @@ source venv/bin/activate
 
 # 3. Install dependencies
 pip install -r requirements.txt
+
+🚀 How to Run
+The program uses an interactive command‑line interface. Just start it and follow the prompts:
+
+bash
+python main.py
+📋 Step‑by‑step execution
+Enter the number of QR codes you want to generate (e.g., 10000).
+
+Choose generation mode – s for sequential, p for parallel (default).
+If parallel, you can set the number of worker processes (default: 4).
+
+Press Enter to start generation; all QR images are saved in the qr_output/ folder.
+
+After generation, the program asks you to press Enter to begin decoding.
+
+Choose decoding mode – s for sequential, t for threaded (default).
+Thread count can be adjusted (default: 8).
+
+The program decodes every image and prints the success rate and a performance summary.
