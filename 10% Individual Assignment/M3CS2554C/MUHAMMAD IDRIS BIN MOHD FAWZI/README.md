@@ -6,6 +6,7 @@
 **Group:** M3CS2554C  
 **Lecturer:** Sir Shahadan Bin Saad
 Github Link:** https://github.com/idrisfawzi/Parallel-QR-Code-Generator-and-Decoder
+
 YouTube Link:** https://youtu.be/MG8vEaH8ObM**
 
 ---
