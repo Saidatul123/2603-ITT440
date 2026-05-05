@@ -195,6 +195,8 @@ Success: 10222/10222.
 ============================================================
 ```
 
+https://imgur.com/fhF9Kqc
+
 ## 📊 Performance Comparison
 
 We performed two sets of tests to demonstrate the impact of **parallel generation** and **concurrent decoding**.
