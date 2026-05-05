@@ -140,14 +140,14 @@ You will be guided through the following steps:
 
 How many QR codes to generate? (e.g., 5000): 222                      
 Generated 222 payloads.
-Generation mode: (s)equential, (p)arallel? [p]: s
+Generation mode: (s)equential, (p)arallel? [p]: s            <img width="491" height="319" alt="ss1" src="https://github.com/user-attachments/assets/c475bb91-c504-45a7-b179-d2cd036a221b" />
 Starting SEQUENTIAL generation...
 Generation done in 0.78 seconds.
 QR images saved in 'qr_output' folder.
 
 Press Enter to start decoding...
 Found 222 QR images.
-Decoding mode: (s)equential, (t)hreaded? [t]: t
+Decoding mode: (s)equential, (t)hreaded? [t]: t            
 Number of threads (press Enter for 8): 4
 Starting THREADED decoding with 4 threads...
 Decoding done in 0.16 seconds.
@@ -158,7 +158,7 @@ Success: 222/222.
 ============================================================
  Total items generated: 222
  Generation  (sequential): 0.78s
- Decoding    (threaded (4 threads)): 0.16s
+ Decoding    (threaded (4 threads)): 0.16s                  <img width="505" height="139" alt="ss1(summary)" src="https://github.com/user-attachments/assets/32dcbbf6-bac8-4bea-8f4b-5231c19ce2f2" />
  TOTAL TIME: 0.94s
 ============================================================
 ```
@@ -172,7 +172,7 @@ Success: 222/222.
 
 How many QR codes to generate? (e.g., 5000): 10000
 Generated 10000 payloads.
-Generation mode: (s)equential, (p)arallel? [p]: p
+Generation mode: (s)equential, (p)arallel? [p]: p                    <img width="495" height="180" alt="ss2" src="https://github.com/user-attachments/assets/da7f103a-4077-44e2-b6f5-0e574d3268fd" />
 Number of processes (press Enter for 4): 4
 Starting PARALLEL generation with 4 processes...
 Generation done in 11.69 seconds.
@@ -189,7 +189,7 @@ Success: 10222/10222.
  PERFORMANCE SUMMARY
 ============================================================
  Total items generated: 10000
- Generation  (parallel (4 workers)): 11.69s
+ Generation  (parallel (4 workers)): 11.69s                         <img width="522" height="134" alt="ss2(summary)" src="https://github.com/user-attachments/assets/6f2346ec-c18b-4b36-8b61-1f97384cbfb7" />
  Decoding    (sequential): 21.36s
  TOTAL TIME: 33.05s
 ============================================================
