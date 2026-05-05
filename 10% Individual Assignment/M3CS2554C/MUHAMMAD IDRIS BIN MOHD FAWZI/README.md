@@ -140,7 +140,7 @@ You will be guided through the following steps:
 
 How many QR codes to generate? (e.g., 5000): 222
 Generated 222 payloads.
-Generation mode: (s)equential, (p)arallel? [p]: s
+Generation mode: (s)equential, (p)arallel? [p]: s    <img width="491" height="319" alt="image" src="https://github.com/user-attachments/assets/8a47d872-8e3a-46a5-932a-4c3a1636a3e7" />
 Starting SEQUENTIAL generation...
 Generation done in 0.78 seconds.
 QR images saved in 'qr_output' folder.
