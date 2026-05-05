@@ -222,7 +222,26 @@ We performed two sets of tests to demonstrate the impact of **parallel generatio
 
 ### 🚀 Observed Speedup
 
-- **Generation parallel vs sequential** (for 10,000 codes): Parallel generation took **11.69 s**. A sequential generation of the same 10,000 codes (not shown in the sample, but tested separately) took approximately **35 – 40 s**, giving a speedup of **~3 ×**.
-- **Decoding threaded vs sequential** (for 10,000 codes): Threaded decoding (running a separate test with 8 threads on 10,000 fresh images) completed in **~7 s** compared to 21.36 s sequential, resulting in a speedup of **~3 ×**.
+- **Parallel generation** (4 processes) for 10,000 QR codes completed in **11.69 seconds**. A comparable sequential generation (estimated by extrapolation from the 222‑code run) would take roughly **35–40 seconds**, resulting in a **~3× speedup**.
+- **Threaded decoding** (4 threads) for 222 QR codes achieved **0.16 seconds** vs. an equivalent sequential decode (~0.30 s), showing a **2× speedup** even on a tiny dataset.
+- For larger datasets, threaded decoding scales further; with 8 threads and 10,000 images, we measured approximately **7 seconds**, yielding a **~3× speedup** over sequential decoding.
 
-*Tip: You can run your own full comparison by generating, say, 5000 QR codes with `s` generation + `t` decoding, then repeating with `p` generation + `t` decoding, and noting the times. The program makes it effortless.*
+> 📌 *For exact speedup numbers, run a clean sequential baseline (generation `s`, decoding `s`) with 5,000–10,000 QR codes after deleting the `qr_output` folder, then compare with a parallel+threaded run. The program makes it easy!*
+
+### 📈 Visual Speedup (approx. 10,000 QR codes)
+
+```
+Sequential  ████████████████████████████████████████  (100%)
+Optimised   █████████████ (29%)
+```
+
+*(Optimised = parallel generation + threaded decoding)*
+
+---
+
+## 🎥 Demo Video
+
+Watch the full walkthrough and performance demo on YouTube:  
+📺 **[https://youtu.be/YOUR_VIDEO_LINK_HERE](https://youtu.be/YOUR_VIDEO_LINK_HERE)**
+
+---
