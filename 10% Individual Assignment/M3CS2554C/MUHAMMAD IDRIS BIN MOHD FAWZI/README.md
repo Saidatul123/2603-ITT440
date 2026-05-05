@@ -195,7 +195,7 @@ Success: 10222/10222.
 ============================================================
 ```
 
-https://imgur.com/fhF9Kqc
+<img width="491" height="319" alt="ss1" src="https://github.com/user-attachments/assets/52e55950-49f4-4bf0-aa5d-bdac6dd3a797" />
 
 ## 📊 Performance Comparison
 
