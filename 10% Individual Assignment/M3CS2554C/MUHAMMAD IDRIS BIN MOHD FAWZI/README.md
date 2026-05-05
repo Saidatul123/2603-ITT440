@@ -26,6 +26,9 @@
 
 ### 🔁 How It Works
 
+### 🔁 How It Works
+
+```text
 ┌─────────────────────────────┐
 │  INPUT: Number of QR codes  │
 └──────────────┬──────────────┘
@@ -50,3 +53,4 @@
 │  OUTPUT: Decoded text +     │
 │  Performance summary        │
 └─────────────────────────────┘
+```
