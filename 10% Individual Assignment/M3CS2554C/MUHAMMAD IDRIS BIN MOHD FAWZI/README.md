@@ -164,6 +164,7 @@ Success: 222/222.
 ```
 <img width="491" height="319" alt="ss1" src="https://github.com/user-attachments/assets/c475bb91-c504-45a7-b179-d2cd036a221b" />
 <img width="505" height="139" alt="ss1(summary)" src="https://github.com/user-attachments/assets/32dcbbf6-bac8-4bea-8f4b-5231c19ce2f2" />
+
 ### 🔸 Large‑scale test (10,000 QR codes)
 
 ```
