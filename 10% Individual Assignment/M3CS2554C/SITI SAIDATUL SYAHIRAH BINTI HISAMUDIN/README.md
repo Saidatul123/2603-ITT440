@@ -1,10 +1,9 @@
-# SITI SAIDATUL SYAHIRAH BINTI HISAMUDIN
+<img width="1566" height="856" alt="image" src="https://github.com/user-attachments/assets/8ab01055-5584-419c-b8f5-82e908dea896" /># SITI SAIDATUL SYAHIRAH BINTI HISAMUDIN
 
 # ⚡ Parallelized Smart Utility Billing System ⚡
 
-<p align="center">
-  <img src="logo.png" width="350" title="Logo Projek">
-</p>
+![Uploading image.png…](https://github.com/Saidatul123/Smart_Bil_Utility/blob/main/logo.png?raw=true)
+
 
 ### 📝 *ITT440 - INDIVIDUAL ASSIGNMENT*
 
@@ -108,7 +107,7 @@ Below are the execution results for the three test categories, showing the signi
 **Processing Summary:** Optimized speedup of ~56%.
 | Console Output | Visual Analytics |
 | :--- | :--- |
-| ![OUTPUT 100K](OUTPUT_100K.jpeg) | ![GRAPH 100K](GRAPH_100K.jpeg) |
+| ![OUTPUT 100K](https://github.com/Saidatul123/Smart_Bil_Utility/blob/main/OUTPUT_100K.jpeg?raw=true) | ![GRAPH 100K](https://github.com/Saidatul123/Smart_Bil_Utility/blob/main/GRAPH_100K.jpeg?raw=true) |
 
 ---
 
@@ -116,7 +115,7 @@ Below are the execution results for the three test categories, showing the signi
 **Processing Summary:** Efficiency remains high at ~55% speedup.
 | Console Output | Visual Analytics |
 | :--- | :--- |
-| ![OUTPUT 500K](OUTPUT_500K.jpeg) | ![GRAPH 500K](GRAPH_500K.jpeg) |
+| ![OUTPUT 500K](https://github.com/Saidatul123/Smart_Bil_Utility/blob/main/OUTPUT_500K.jpeg?raw=true) | ![GRAPH 500K](https://github.com/Saidatul123/Smart_Bil_Utility/blob/main/GRAPH_500K.jpeg?raw=true) |
 
 ---
 
@@ -124,7 +123,7 @@ Below are the execution results for the three test categories, showing the signi
 **Processing Summary:** Handling massive data with ~55% optimization.
 | Console Output | Visual Analytics |
 | :--- | :--- |
-| ![OUTPUT 1J](OUTPUT_1J.jpeg) | ![GRAPH 1J](GRAPH_1J.jpeg) |
+| ![OUTPUT 1J](https://github.com/Saidatul123/Smart_Bil_Utility/blob/main/OUTPUT_1J.jpeg?raw=true) | ![GRAPH 1J](https://github.com/Saidatul123/Smart_Bil_Utility/blob/main/GRAPH_1J.jpeg?raw=true) |
 
 ---
 
