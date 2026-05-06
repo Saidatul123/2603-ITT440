@@ -2,9 +2,7 @@
 
 # ⚡ Parallelized Smart Utility Billing System ⚡
 
-<p align="center">
-  <img src="logo.png" width="350" title="Logo Projek">
-</p>
+![Uploading image.png…](https://raw.githubusercontent.com/Saidatul123/2603-ITT440/refs/heads/main/logo.png)
 
 ### 📝 *ITT440 - INDIVIDUAL ASSIGNMENT*
 
