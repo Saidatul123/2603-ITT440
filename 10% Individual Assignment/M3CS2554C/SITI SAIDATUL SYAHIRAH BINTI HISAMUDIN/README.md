@@ -1,4 +1,4 @@
-<img width="1566" height="856" alt="image" src="https://github.com/user-attachments/assets/8ab01055-5584-419c-b8f5-82e908dea896" /># SITI SAIDATUL SYAHIRAH BINTI HISAMUDIN
+# SITI SAIDATUL SYAHIRAH BINTI HISAMUDIN
 
 # ⚡ Parallelized Smart Utility Billing System ⚡
 
